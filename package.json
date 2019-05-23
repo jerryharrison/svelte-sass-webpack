@@ -1,0 +1,37 @@
+{
+  "name": "svelte-sass-webpack",
+  "version": "1.0.0",
+  "private": true,
+  "repository": "https://github.com/jerryharrison/svelte-sass-webpack",
+  "author": "Jerry Harrison <jerry@indie.pw>",
+  "license": "MIT",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack",
+    "watch": "webpack-dev-server --content-base public"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "css-loader": "^2.1.1",
+    "json-loader": "^0.5.7",
+    "mini-css-extract-plugin": "^0.6.0",
+    "node-sass": "^4.12.0",
+    "raw-loader": "^2.0.0",
+    "sass-loader": "^7.1.0",
+    "serve": "^11.0.0",
+    "style-loader": "^0.23.1",
+    "svelte": "^3.0.0",
+    "svelte-loader": "2.13.3",
+    "to-string-loader": "^1.1.5",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.3.1"
+  },
+  "dependencies": {
+    "file-loader": "^3.0.1",
+    "normalize-scss": "^7.0.1",
+    "svelte-preprocess-sass": "^0.2.0",
+    "svero": "^0.5.0",
+    "typebase.css": "^0.5.0",
+    "url-loader": "^1.1.2"
+  }
+}

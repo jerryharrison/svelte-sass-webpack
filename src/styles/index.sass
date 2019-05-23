@@ -1,0 +1,59 @@
+
+
+.underscore
+  background: url(data:image/svg+xml;base64,PHN2ZyBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB3aWR0aD0iMTE5IiBoZWlnaHQ9IjYiIHZpZXdCb3g9IjAgMCAxMTkgNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cGF0aCBkPSJNMTE3LjQzNCAzLjg1M0M1OS4wMjcgNS45MzMgODQuNzg0LTIuNDYgMS41NjYgMy40MzYiIHN0cm9rZT0iIzNDQjM3MCIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPC9zdmc%2BCg%3D%3D) bottom left/100% 0.75rem no-repeat
+  padding-bottom: .5rem
+
+.highlight
+  background-color: #fff2ac
+  background-image: linear-gradient(to right, #ffe359 0%, #fff2ac 100%)
+
+[aria-label]
+  cursor: help
+  position: relative
+  //Tooltip text container - above element
+  //You can adjust the position to make the container appear below or beside the element
+  &::before
+    background-color: #000
+    border-radius: 5px
+    color: #fff
+    font-size: .75rem
+    line-height: 1rem
+    content: attr(aria-label)
+    padding: .25rem .75rem
+    position: absolute
+    text-transform: none
+    transition: all 0.5s ease
+    box-sizing: inherit
+    display: inline
+    white-space: nowrap
+  &::before,
+  &::after
+    opacity: 0
+    pointer-events: none
+  //Triggering the transition
+  &:focus::before,
+  &:focus::after,
+  &:hover::before,
+  &:hover::after
+    opacity: 1
+    transition: all 0.75s ease
+  &[tooltip-position='top']
+    &::before
+      top: -2rem
+      left: 50%
+      margin-left: -50%
+  &[tooltip-position='right']
+    &::before
+      top: -.25rem
+      left: 100%
+      transform: translateX(.5rem)
+  &[tooltip-position='left']
+    &::before
+      top: -.25rem
+      right: 100%
+      transform: translateX(-.5rem)
+  &[tooltip-position='bottom']
+    &::before
+      top: 1rem
+      transform: translateY(.25rem)
