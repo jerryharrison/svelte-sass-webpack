@@ -3857,9 +3857,9 @@ svelte-preprocess-sass@^0.2.0:
   dependencies:
     svelte-preprocess-filter "^1.0.0"
 
-svelte@^3.0.0:
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/svelte/-/svelte-3.3.0.tgz#03ac695c7814eeae934b9a8f8b55094395b788ca"
+svelte@^3.49.0:
+  version "3.49.0"
+  resolved "https://registry.yarnpkg.com/svelte/-/svelte-3.49.0.tgz#5baee3c672306de1070c3b7888fc2204e36a4029"
 
 svero@^0.5.0:
   version "0.5.0"

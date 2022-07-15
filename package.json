@@ -19,7 +19,7 @@
     "sass-loader": "^7.1.0",
     "serve": "^11.0.0",
     "style-loader": "^0.23.1",
-    "svelte": "^3.0.0",
+    "svelte": "^3.49.0",
     "svelte-loader": "2.13.3",
     "to-string-loader": "^1.1.5",
     "webpack": "^4.30.0",
